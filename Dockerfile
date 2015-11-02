@@ -1,12 +1,6 @@
-# learned a lot from https://github.com/krischer/seismo_live/blob/master/Dockerfile
-
-# https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook
 FROM jupyter/datascience-notebook
-#FROM jupyter/scipy-notebook
 
-# https://hub.docker.com/r/jupyter/notebook/
-# https://github.com/jupyter/notebook
-#FROM jupyter/notebook
+# learned a lot from https://github.com/krischer/seismo_live/blob/master/Dockerfile
 
 MAINTAINER raymond.yee@gmail.com
 
@@ -17,7 +11,6 @@ MAINTAINER raymond.yee@gmail.com
 
 # Rest as jovyan user who is provided by the Jupyter notebook template.
 # USER jovyan
-
 
 # for images based on jupyter/minimal-notebook
 COPY notebooks/ /home/jovyan/work/
